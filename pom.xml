@@ -17,15 +17,35 @@
         <module>happy-code-starter-mq-sample</module>
         <module>happy-code-starter-stream-mq-sample</module>
     </modules>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
     <dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>cool.happycoding</groupId>
-            <artifactId>happy-code-dependencies</artifactId>
-            <version>1.0.0.RELEASE</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cool.happycoding</groupId>
+                <artifactId>happy-code-dependencies</artifactId>
+                <version>1.0.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <finalName>${artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
