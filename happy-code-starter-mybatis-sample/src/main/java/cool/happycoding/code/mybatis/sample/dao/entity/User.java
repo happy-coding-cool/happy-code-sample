@@ -1,4 +1,4 @@
-package cool.happycoding.code.mybatis.sample.domain.entity;
+package cool.happycoding.code.mybatis.sample.dao.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -6,11 +6,10 @@ import cool.happycoding.code.mybatis.base.BaseEntity;
 import lombok.Data;
 
 import java.math.BigDecimal;
-
 /**
  * description
  *
- * @author lanlanhappy 2020/12/06 2:26 下午
+ * @author lanlanhappy 2021/02/26 2:35 下午
  */
 @Data
 @TableName("h2user")

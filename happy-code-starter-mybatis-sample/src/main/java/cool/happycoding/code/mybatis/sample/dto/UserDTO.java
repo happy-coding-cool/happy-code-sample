@@ -1,4 +1,4 @@
-package cool.happycoding.code.mybatis.sample.domain.dto;
+package cool.happycoding.code.mybatis.sample.dto;
 
 import cool.happycoding.code.mybatis.base.BaseDTO;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 /**
  * description
  *
- * @author lanlanhappy 2020/12/06 2:31 下午
+ * @author lanlanhappy 2021/02/26 2:39 下午
  */
 @Data
 public class UserDTO extends BaseDTO {

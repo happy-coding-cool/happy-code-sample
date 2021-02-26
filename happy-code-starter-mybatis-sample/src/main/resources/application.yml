@@ -26,4 +26,4 @@ mybatis-plus:
 
 logging:
   level:
-    cool.happycoding.code.mybatis.sample.domain.mapper: debug
+    cool.happycoding.code.mybatis.sample.dao.mapper: debug

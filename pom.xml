@@ -25,7 +25,7 @@
             <dependency>
                 <groupId>cool.happycoding</groupId>
                 <artifactId>happy-code-dependencies</artifactId>
-                <version>1.0.0.RELEASE</version>
+                <version>1.0.1-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
