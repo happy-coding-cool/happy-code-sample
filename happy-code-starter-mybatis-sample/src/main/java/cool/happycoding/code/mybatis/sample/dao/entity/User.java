@@ -2,6 +2,7 @@ package cool.happycoding.code.mybatis.sample.dao.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.Version;
 import cool.happycoding.code.mybatis.base.BaseEntity;
 import lombok.Data;
 
@@ -20,6 +21,10 @@ public class User extends BaseEntity {
 
     @TableField("age")
     private Integer age;
+
+    @TableField("version")
+    @Version
+    private Integer version;
 
     @TableField("gender")
     private String gender;

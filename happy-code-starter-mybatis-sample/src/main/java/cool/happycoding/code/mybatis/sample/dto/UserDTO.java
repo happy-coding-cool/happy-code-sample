@@ -1,6 +1,7 @@
 package cool.happycoding.code.mybatis.sample.dto;
 
 import cool.happycoding.code.mybatis.base.BaseDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -19,4 +20,5 @@ public class UserDTO extends BaseDTO {
     private String addr;
     private BigDecimal salary;
     private String remark;
+    private Integer version;
 }

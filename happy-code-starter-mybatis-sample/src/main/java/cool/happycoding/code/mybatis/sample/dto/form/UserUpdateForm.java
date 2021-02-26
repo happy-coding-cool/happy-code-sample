@@ -22,6 +22,10 @@ public class UserUpdateForm extends BaseForm {
     private String id;
     @ApiModelProperty(name="年龄")
     private Integer age;
+
+    @ApiModelProperty(name="版本")
+    private Integer version;
+
     @ApiModelProperty(name="性别")
     private String gender;
     @ApiModelProperty(name="地址")

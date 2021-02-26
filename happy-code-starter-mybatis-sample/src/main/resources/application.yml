@@ -12,6 +12,8 @@ happy:
     user:
       default-user-id: 999
       default-user-name: lanlanhappy
+    mybatis:
+      enable-version: true
 spring:
   datasource:
     driver-class-name: org.h2.Driver
@@ -23,6 +25,7 @@ spring:
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
+
 
 logging:
   level:
