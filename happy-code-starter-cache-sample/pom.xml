@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>cool.happycoding</groupId>
-            <artifactId>happy-code-cache-mybatis</artifactId>
+            <artifactId>happy-code-starter-cache</artifactId>
         </dependency>
         <dependency>
             <groupId>cool.happycoding</groupId>
