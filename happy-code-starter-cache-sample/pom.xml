@@ -18,15 +18,11 @@
         </dependency>
         <dependency>
             <groupId>cool.happycoding</groupId>
-            <artifactId>happy-code-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cool.happycoding</groupId>
             <artifactId>happy-code-starter-swagger</artifactId>
         </dependency>
         <dependency>
             <groupId>cool.happycoding</groupId>
-            <artifactId>happy-code-starter-log</artifactId>
+            <artifactId>happy-code-starter-web</artifactId>
         </dependency>
     </dependencies>
 
