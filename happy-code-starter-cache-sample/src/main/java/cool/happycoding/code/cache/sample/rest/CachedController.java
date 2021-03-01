@@ -1,7 +1,6 @@
 package cool.happycoding.code.cache.sample.rest;
 
 import cool.happycoding.code.base.result.BaseResult;
-import cool.happycoding.code.base.util.DateUtils;
 import cool.happycoding.code.cache.sample.dto.UserBean;
 import cool.happycoding.code.cache.sample.service.UserCacheService;
 import io.swagger.annotations.Api;
