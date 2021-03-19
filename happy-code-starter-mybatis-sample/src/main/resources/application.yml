@@ -14,6 +14,10 @@ happy:
       default-user-name: lanlanhappy
     mybatis:
       enable-version: true
+    log:
+      enable-print-header: true
+      enable-print-response: true
+      enable-print-request: true
 spring:
   datasource:
     driver-class-name: org.h2.Driver
@@ -29,4 +33,5 @@ mybatis-plus:
 
 logging:
   level:
+    cool.happycoding.code: info
     cool.happycoding.code.mybatis.sample.dao.mapper: debug

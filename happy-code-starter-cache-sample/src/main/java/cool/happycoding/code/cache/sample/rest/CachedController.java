@@ -19,29 +19,29 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("cached")
 public class CachedController {
 
-    private final UserCacheService userCacheService;
+    private final UserCacheService userCacheServiceImpl;
 
-    public CachedController(UserCacheService userCacheService) {
-        this.userCacheService = userCacheService;
+    public CachedController(UserCacheService userCacheServiceImpl) {
+        this.userCacheServiceImpl = userCacheServiceImpl;
     }
 
     @GetMapping("getByUserId/{userId}")
     public BaseResult<UserBean> getByUserId(@PathVariable String userId){
-        return BaseResult.success(userCacheService.getById(userId));
+        return BaseResult.success(userCacheServiceImpl.getById(userId));
     }
 
     @PostMapping("update-CacheBean/{userId}")
     @ApiOperation(value = "更新upateCacheBean")
     public BaseResult<UserBean> updateCacheBean(@PathVariable String userId){
         UserBean userBean = new UserBean(userId, "李四");
-        return BaseResult.success(userCacheService.updateCacheBean(userBean));
+        return BaseResult.success(userCacheServiceImpl.updateCacheBean(userBean));
     }
 
 
     @PostMapping("del-CacheBean/{userId}")
     @ApiOperation(value = "删除delCacheBean")
     public BaseResult<Boolean> delCacheBean(@PathVariable String userId){
-        userCacheService.delCacheBean(userId);
+        userCacheServiceImpl.delCacheBean(userId);
         return BaseResult.success(true);
     }
 

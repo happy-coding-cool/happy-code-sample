@@ -9,27 +9,6 @@ happy:
         email: happycoding@aliyun.com
         url: https://github.com/happy-coding-cool/happy-code/issues
         name: lanlanhappy
-
-
-jetcache:
-  # 统计间隔，默认0：表示不统计
-  statIntervalMinutes: 1
-  # areaName是否作为缓存key前缀，默认True
-  areaInCacheName: false
-  local:
-    default:
-      type: linkedhashmap
-      keyConvertor: fastjson
-      limit: 100
-      expireAfterAccessInMillis: 30000
-  remote:
-    default:
-      type: redis.springdata
-      keyConvertor: fastjson
-      valueEncoder: java
-      valueDecoder: java
-      expireAfterWriteInMillis: 5000
-
 spring:
   redis:
     url: redis://127.0.0.1:6379/

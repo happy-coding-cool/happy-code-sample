@@ -1,18 +1,16 @@
 package cool.happycoding.code.cache.sample;
 
-import com.alicp.jetcache.anno.config.EnableCreateCacheAnnotation;
-import com.alicp.jetcache.anno.config.EnableMethodCache;
+import cool.happycoding.code.cache.EnableHappyCache;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * description
  *
- * @author lanlanhappy 2021/02/27 4:44 下午
+ * @author lanlanhappy 2021/02/27 4:44 下午EnableHappyCache
  */
 @SpringBootApplication
-@EnableCreateCacheAnnotation
-@EnableMethodCache(basePackages = {"cool.happycoding.code.cache.sample"})
+@EnableHappyCache(basePackages = {"cool.happycoding.code.cache.sample"})
 public class HappyCacheApplication {
 
     public static void main(String[] args) {
