@@ -22,6 +22,7 @@
         <module>happy-code-starter-mq-sample</module>
         <module>happy-code-starter-stream-mq-sample</module>
         <module>happy-code-starter-cache-sample</module>
+        <module>happy-code-starter-log-sample</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
